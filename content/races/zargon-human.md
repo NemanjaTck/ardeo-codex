@@ -1,0 +1,1 @@
+Zargon Humans possess bronze-toned skin and dark, intelligent eyes, often framed by long, decorative robes adorned with symbols of knowledge and divinity. They are slender, standing with a posture that conveys their scholarly nature. They are curious and methodical, often lost in thought or found in the midst of scholarly debates.

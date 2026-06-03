@@ -1,0 +1,7 @@
+- There is a tension between different races in the village.
+- Leader of the village is highly religious
+- There is a temple, a library devoted to religious studies
+- People in the village are unpleasant and ignorant
+- Economic depression hit the village, trade is aborted
+- Small tavern with a small bar
+- Bakery, Pottery, Waxer

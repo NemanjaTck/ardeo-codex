@@ -1,0 +1,1 @@
+Moon Elves feature pale, luminescent skin that seems to softly glow under moonlight, with deep blue or silver eyes that reflect their nocturnal nature. They are lithe and move with a fluid, almost ethereal grace. Intrinsically linked to the night, they are mysterious and introspective, often preferring solitude or the company of their own kind.

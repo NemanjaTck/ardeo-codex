@@ -1,0 +1,1 @@
+Ragdar Humans are shorter than Moravia Humans and muscular, with fair skin and light-colored hair, often seen in braids or tied back in preparation for battle. They wear sturdy leather and metal armor, bearing symbols of their cities. Honor and combat prowess define their straightforward personality, valuing bravery and the ability to lead in war.

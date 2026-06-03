@@ -1,0 +1,1 @@
+Untouched, fully preserved statue of god Koval. Koval is not a characteristic god for this region. It is not known who is safeguarding the statue. It is, however, known, that some orc thugs and bandits have secret hideouts and caves in Wadenor Hills. It is not safe to travel across them, especially during the night.

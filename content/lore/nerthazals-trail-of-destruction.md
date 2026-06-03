@@ -1,0 +1,7 @@
+Learning the news of the Morrgataur's defeat and the arrival of reinforcements, Ner'thazal realized that there is no more time to spare. He sent his scouts south to Heg Dragal, to notify Shahtani, gathering troops in Rogard.
+
+Shahtani was to join him in the village of Landuis, day of walking from Hazimat fields, and two days of walk to Solarion. Ner’thazal plan was to regroup there and organize the troops for the siege. Now, there was no time for that. Shahtani was instructed to march directly to Solarion, through the Eltheri Peaks.
+He was expecting the forces of Amalgam to arrive to Solarion before him, but he didn’t want to give them a chance to intercept him before. He didn’t expect any resistance on the way and he was mostly right.
+Almost two months after the fall of Nezereth, Ner'thazal left the city going east towards Solarion, with around 25 thousand troops. He left one of his most trusted people Xes'zun the Wind Master with a bastion of mixed Rock and Storm Zenari troops with newest addition of recruited young slaves from the Setareh Elves in the city.
+
+On his way to Solarion, Ner'thazal left the trail of destruction. He was making sure that no small army or resistance could form behind him and slow him down. Villages were completely burned, males killed, females and children enslaved. For the first five days, aside from two of three small forest skirmishes there was no real threat for the Zenari troops. On the road from Nezereth to Solarion, there was only one major settlement that could pose danger to the siege attackers.

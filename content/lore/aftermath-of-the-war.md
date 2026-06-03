@@ -1,0 +1,4 @@
+- Worldwalkers, define where they ended up, some leading cities, some in the wilderness
+- What happened with Dragons and Dragonguard
+- Dismantling of Zenari Empire
+- Bustling growth of the free cities, taking part in renewal of Elven cities

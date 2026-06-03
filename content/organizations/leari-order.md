@@ -1,0 +1,4 @@
+Founded in the aftermath of the War of the Elements, the Leari Order emerged in Solarion, born from a pact between Elves, Dwarves, Humans and Orcs. Devoted to Goddess Lea, the celestial matron, this order became a beacon of unity and peace. Faction leaders pledged their elite knights as the Order's inaugural guardians, committing to meeting once every three years across various cities to demonstrate their unity and strength.
+Supported by the realms they protect, the Leari Order stands as one of the wealthiest factions, with a widespread presence dedicated to nurturing young knights, bolstering city defenses, and upholding peace. Their oath is to protect people of the world, and to ensure peace at any cost.
+
+**

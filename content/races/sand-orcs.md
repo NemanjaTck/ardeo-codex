@@ -1,0 +1,1 @@
+Sand Orcs have sandy-colored skin that helps them blend into their arid surroundings, and their eyes are like mirages, shimmering with heat haze. They are lean and rugged, adapted to the harsh desert climate with an enduring resilience. These orcs are survivors, known for their resourcefulness and ability to navigate the vast, unforgiving deserts.

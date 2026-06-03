@@ -1,0 +1,9 @@
+The story of migration and adaptation that happened across the continent is a captivating tale of how environment and necessity can shape the development of different civilizations. As population expanded, and resources became scarcer, the drive to explore and live brighter futures brought the much needed migration that altered the very core of the ancient races. 
+
+Elves’ migration saw them venturing north, adapting to colder climate and rugged terrain. Over time they evolved into something distinct from their southern kin, changing their physical characteristics, spoken language, and cultural practices.
+In the mid and northwestern regions of the continent, the Humans found fertile ground for their burgeoning societies. Far to the north, where the unforgiving winters and mountainous terrain demanded strength and determination, the Dwarven clans emerged. These stout and hardy individuals became the masters of their harsh surroundings.
+
+In the eastern forests and swamps, where dangerous predators and conditions demanded agility and speed for survival, the Halflings separated from other races, evolving into a unique culture perfectly suited to their environment. Halflings as a race were created together with their northern neighbours Gnomes, by Ishallor, on the request of Tykashi, goddess of luck. She wanted a new race, that she could shape, and give some light to the dark swamps of the eastern continent. 
+
+In the warmer southern regions, the Zenari faced their own trials and challenges. The environment demanded resilience and adaptability, and as they settled in these harsher lands, they underwent transformations that turned them into a unique culture different from the Zenari of old.
+They evolved into strong and resilient Orcs. Far to the south, in the hills, some of these Orcs, intermingled with the creations of Ishhalor, leading to first Half-Giant tribes.

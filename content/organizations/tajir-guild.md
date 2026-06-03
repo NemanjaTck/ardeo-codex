@@ -1,0 +1,4 @@
+Tajir Guild under its new name is a relatively young organization. In the aftermath of war, with the industries ravaged, trade routes destroyed, the Tajir Guild was formed from an alliance of leading trade guilds, marking a new era in commerce across Ardeo. This coalition, spanning diverse trading sectors, included silk guilds from halfling Commonwealth of Clover, pearl traders from Segmut, Aurum guild from Eurenis central continent and many others.
+Initially Tajir Guild was focused on mutual support and recovery, helping smaller traders rebuild their industries, to prosper together and return to former glory. Over time, however, its accumulating wealth and power extended into political realms, with guild members gaining significant influence over governmental and urban affairs, sometimes speculated to control cities from behind the scenes.
+
+**

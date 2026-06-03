@@ -1,0 +1,7 @@
+Alantir had never fully forgiven the betrayal of Ognia, as he saw it, and waited patiently for his revenge. A grand celebration was underway in the Realm of Fire, as Ognia had just created her first daughter, Inis. While other gods sent gifts through Eletheri, Alantir decided to congratulate Ognia in person. But he had a darker purpose - waiting for the perfect moment to strike and destroy her while she was still vulnerable from the creation process. This act marked the first ever destruction of a god in the history of Ardeo.
+
+The First Pantheon was furious. Armies from all realms gathered and marched against the Realm of Darkness. Even with his impressive forces and martial skills, Alantir was no match for the combined might of the nine united realms.
+
+After his fall, his throne was captured. Lea sent a message to the elements, as the gods knew they could not harm Alantir without their help. The elemental forces arrived and stripped Alantir of all his powers. Once made mortal, he was sentenced to death by the First Pantheon and executed at his throne. With no children to inherit his rule, Xantis, the son of Yio, became the new ruler of the Realm of Darkness, while Inis took over her mother Ognia’s duties.
+
+Furious at the loss of two of their creations, the elemental forces instituted a new law in the Celestial Realm, forbidding gods from attacking each other.

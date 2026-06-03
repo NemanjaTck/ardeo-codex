@@ -1,0 +1,1 @@
+Ziyalea has her own spirit beast, boarlike creature that lives in the Material plane, respected by many cities and races

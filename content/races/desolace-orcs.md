@@ -1,0 +1,1 @@
+Desolace Orcs have pallid, almost ghostly skin, with stark white or gray hair that gives them a haunting appearance. Their bodies are wiry but strong, accustomed to surviving in barren, desolate landscapes. They are solemn and introspective, with a deep-rooted survival instinct that makes them formidable in desolate environments.

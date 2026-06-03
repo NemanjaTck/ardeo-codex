@@ -1,0 +1,4 @@
+The Raven Syndicate operates a sophisticated network dedicated to the acquisition and control of information. Renowned for their espionage skills, advancement within the Syndicate is merit-based, relying on cunning and experience. Higher ranks have their own spies and informants, with a regular unit of thugs to handle non delicate business. Deception, persuasion, forgery are just some of the things Raven Syndicate is famous for.
+While their methods might be shadowy, their motives are not purely malevolent; they've been known to use their intelligence for noble causes. Their moral ambiguity does not deter them from manipulating laws to their favor, often working from the shadows. The Syndicate has infiltrated every major city, with their influence varying from openly known to meticulously concealed.
+
+**

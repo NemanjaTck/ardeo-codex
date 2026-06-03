@@ -1,0 +1,1 @@
+Flame Zenari feature dark, ashen skin with cracks that resemble molten rock, and their eyes burn with a fierce, ember-like glow. Their bodies are rugged and stocky, built to withstand the intense heat of their volcanic homes. Passionate and tempestuous, Flame Zenari are fierce warriors, quick to anger but equally quick to forge strong bonds of loyalty.

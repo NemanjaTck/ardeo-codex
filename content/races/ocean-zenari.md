@@ -1,0 +1,1 @@
+Ocean Zenari have deep blue or green skin that is smooth and appears moist, complemented by eyes the color of the ocean depths. Their bodies are sleek and built for swimming, with webbed fingers and strong limbs. They are calm and collected, often using their mastery of water to navigate and control their environment with a strategic mind.

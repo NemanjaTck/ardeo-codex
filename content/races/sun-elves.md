@@ -1,0 +1,1 @@
+Sun Elves have golden toned skin and bright, almond-shaped amber eyes, often adorned with intricate tattoos that signify their magical heritage. Their bodies are slender yet statuesque, exuding a graceful strength. Known for their pride and intelligence, Sun Elves are diplomatic but can be aloof, valuing knowledge and ancient traditions.

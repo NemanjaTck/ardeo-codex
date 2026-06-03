@@ -1,0 +1,1 @@
+Qi-Yian Humans have a diverse range of appearances from pale to darker skin tones, typically with dark eyes and hair worn in various styles that indicate their regional origins. They dress in colorful, functional clothing suited for long travels. Skilled negotiators and culturally adaptive, they are gregarious and have a keen sense for business and diplomacy.

@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-body: "Spectral", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Global readability bump — scales every rem-based size up ~12.5%. */
+    font-size: 112.5%;
+  }
+  body {
+    @apply bg-ink-900 text-parchment font-body antialiased;
+    background-image:
+      radial-gradient(115% 70% at 50% -8%, rgba(216, 178, 74, 0.08), transparent 60%),
+      radial-gradient(90% 60% at 100% 0%, rgba(207, 123, 60, 0.05), transparent 55%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-parchment;
+    letter-spacing: 0.01em;
+  }
+  ::selection {
+    background: rgba(216, 178, 74, 0.28);
+    color: #fff7e2;
+  }
+  a {
+    text-underline-offset: 3px;
+  }
+  /* Readable focus ring */
+  :focus-visible {
+    outline: 2px solid rgba(216, 178, 74, 0.7);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* A thin gilded rule with a central diamond — used between sections. */
+  .rule-ornament {
+    @apply flex items-center justify-center gap-3 text-gold-deep;
+  }
+  .rule-ornament::before,
+  .rule-ornament::after {
+    content: "";
+    height: 1px;
+    flex: 1 1 auto;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(168, 132, 43, 0.6),
+      transparent
+    );
+  }
+
+  .panel {
+    @apply rounded-sm border border-edge/80 bg-ink-700/60 backdrop-blur-[1px];
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-gold-deep/50
+           bg-ink-600/70 px-3 py-1 font-display text-xs uppercase tracking-[0.18em]
+           text-gold;
+  }
+
+  .link-gold {
+    @apply text-gold transition-colors hover:text-gold-bright;
+  }
+}
+
+/* ---- Readable "grimoire" prose ---------------------------------------- */
+.prose-grimoire {
+  --tw-prose-body: #dcd2bb;
+  --tw-prose-headings: #e7cd82;
+  --tw-prose-lead: #cabfa3;
+  --tw-prose-links: #ebbd4f;
+  --tw-prose-bold: #f2ead6;
+  --tw-prose-counters: #b9ac8d;
+  --tw-prose-bullets: #8a7a4f;
+  --tw-prose-hr: #3a2f1d;
+  --tw-prose-quotes: #ccc0a1;
+  --tw-prose-quote-borders: #a8842b;
+  --tw-prose-captions: #a99d80;
+  --tw-prose-code: #eccb6b;
+  --tw-prose-th-borders: #4a3c25;
+  --tw-prose-td-borders: #33291a;
+
+  font-size: 23px;
+  line-height: 1.75;
+  max-width: none;
+}
+@media (min-width: 768px) {
+  .prose-grimoire {
+    font-size: 28px;
+  }
+}
+.prose-grimoire :is(h2, h3) {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.prose-grimoire h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(168, 132, 43, 0.28);
+}
+.prose-grimoire a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(235, 189, 79, 0.35);
+  transition: color 0.15s, border-color 0.15s;
+}
+.prose-grimoire a:hover {
+  color: #f4d680;
+  border-bottom-color: rgba(244, 214, 128, 0.9);
+}
+.prose-grimoire blockquote {
+  font-style: italic;
+  background: rgba(168, 132, 43, 0.06);
+  border-radius: 2px;
+  padding: 0.4em 1.1em;
+}
+.prose-grimoire hr {
+  border: 0;
+  height: 1.4em;
+  background: center / contain no-repeat;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(168, 132, 43, 0.55),
+    transparent
+  );
+  mask: radial-gradient(circle at center, transparent 6px, black 6.5px);
+  -webkit-mask: radial-gradient(circle at center, transparent 6px, black 6.5px);
+}
+.prose-grimoire table {
+  font-size: 0.95em;
+}
+.prose-grimoire :is(th) {
+  font-family: var(--font-display), serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d8b24a;
+}
+.prose-grimoire strong {
+  font-weight: 600;
+}
+/* First paragraph drop-cap, opt-in via .has-dropcap on the container */
+.has-dropcap > .prose-grimoire > p:first-of-type::first-letter {
+  font-family: var(--font-display), serif;
+  font-size: 3.1em;
+  line-height: 0.8;
+  float: left;
+  padding: 0.06em 0.12em 0 0;
+  color: #e3c777;
+}

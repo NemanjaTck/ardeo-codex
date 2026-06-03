@@ -1,0 +1,1 @@
+Rock Zenari boast thick, stone-like skin that varies from shades of brown to gray, and their eyes resemble precious minerals. They are broad and robust, with a solid stance that makes them formidable in combat. Grounded and resilient, Rock Zenari are deeply connected to the land and possess an innate strength, both physically and in their unyielding spirit.

@@ -1,0 +1,5 @@
+Devoted to nature, their main cause is to protect the beauty of the world, natural wonders, and wildlife. Agents of the Circle are operating in harmony with the environment both within and beyond city walls.
+Circle of Gaia operates in smaller groups, without having a global leadership. Leaders of small cells are called Elders, and they can count from ten to more than one hundred members. Biggest group is located in the Whisperwood, lands of Moravia, and is sometimes assumed that the forests there are their headquarters. 
+They respect nature, however also maintaining a deep respect for all living beings and their laws. Their members, regarded as equals regardless of experience or strength, are bound by a sacred oath to minimize harm and uphold the Circle's values. They also take the respect of their fellow Circle members to an utter level, treating them as brothers and sisters. Not counting the Circle Elder leading them, there are no ranks inside the organization.
+
+****

@@ -1,0 +1,1 @@
+Not much is known about Planar watchers. Enveloped in legend, the Planar Watchers are said to possess extraordinary powers granted by the gods, enabling them to navigate various planes of existence and, in some tales, to reclaim souls from beyond the veil of death.

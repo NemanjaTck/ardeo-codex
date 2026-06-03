@@ -1,0 +1,11 @@
+From the moment the Zenari tribes settled the verdant lands of Heg Dragal—later becoming Orcs—they encountered fierce resistance from the south. The Half-Giants from the Kilgal hills to the south utilized Heg Dragal's rich lands as their hunting grounds and were unwilling to share these resources with the newcomers. Their attempts to evict the Zenari were unsuccessful, and for years, the borders remained under tension, with frequent skirmishes and raids that wreaked havoc on the landscape and depleted its resources without any major military engagements.
+
+Amidst these conflicts, Ramundash the Second seized the opportunity to align with Ner’thazal's forces after the Orcs declined to participate in the broader war. Following the fall of Nezereth and the capitulation signed by Naela Soulwind, elder of Sarion—to spare her people further bloodshed—a portion of Zenari forces under Shahtani was able to push southward toward Heg Dragal.
+
+The small cities and villages of the fragmented Orc tribes were ill-prepared to withstand the organized might of the Zenari troops. In short order, each settlement fell under the control of the Half-Giant Kilgal tribes, who swiftly asserted their dominance over the region.
+
+Meanwhile, the Foirhone zealots from the northern reaches of Heg Dragal capitalized on the opportunity to expand their territory. They seized lands along their borders and ventured into the valley, where they established their own outposts, further complicating the region’s geopolitical landscape.
+
+Shahtani established her base in Rogard, the largest of the Orc cities, and began the task of recruiting both Orc slaves and Half-Giants into the Zenari ranks. As she advanced toward Heg Dragal, she passed close to the cities of Foirhone and Senur, the largest city of the Senero Caliphate. Recognizing Foirhone's heavy fortifications and mountainous location, Shahtani deemed a direct assault on the city for the Zenari Empire an inefficient use of resources, offering little strategic gain. However, she formed ambitions to eventually confront the Senero Elves, targeting not only their lands but also the knowledge of the Senero moon.
+
+In the forges of Rogard, Shahtani commissioned the crafting of two potent artifacts—a ring and a necklace. These items were imbued with powers intended to bolster her capabilities in the following conflicts.

@@ -1,0 +1,1 @@
+Dwelling in the remote Bargahai Mountains, the White Fangs is an enigmatic order devoted to the worship of Goddess Eisera and the protection of their harsh, mountainous home. Comprising individuals seeking adventure or solitude, they occasionally reveal themselves to travelers, hinting at the existence of sacred sites dedicated to their deity amidst the rugged landscape.

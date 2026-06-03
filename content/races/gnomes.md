@@ -1,0 +1,1 @@
+Gnomes are small, standing no taller than 4-5 feet, with twinkling eyes and expressive faces framed by wild, colorful hair. Their bodies are compact but surprisingly sturdy, capable of quick, nimble movements. Inventive and exuberant, gnomes are natural tinkerers and tricksters, always looking for a puzzle to solve or a prank to play.

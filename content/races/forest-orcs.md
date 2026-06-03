@@ -1,0 +1,1 @@
+Forest Orcs are covered in green, bark-textured skin with moss-like hair, blending perfectly into the woodland environments. They are nimble and have an athletic build that aids in moving through dense forests. They are stealthy and resourceful, living in harmony with the forest and often acting as its fierce protectors.

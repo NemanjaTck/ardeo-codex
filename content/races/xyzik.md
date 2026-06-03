@@ -1,0 +1,1 @@
+Xyzik are a race of strong horselike people. Standing tall on two legs, their skin and hair/mane can vary from dark black to blonde, white colors. They are mostly living in forests, in their small encampments, mainly focusing on hunting and gathering for survival.

@@ -1,0 +1,32 @@
+{
+  "name": "ardeo-codex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-vault.mjs && node scripts/build-search.mjs",
+    "predev": "node scripts/build-search.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/build-search.mjs",
+    "build": "next build",
+    "start": "next start",
+    "preview": "npx serve out"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2",
+    "next": "^16.2.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5"
+  }
+}

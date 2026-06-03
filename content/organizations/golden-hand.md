@@ -1,0 +1,4 @@
+Members of Golden Hand are famous for being the best mercenaries you can inscribe on the continent of Westglade. Started out of the city Segmut, few of the older, experienced war veterans recognized the need for muscle as the world was still in the postwar disarray. As first founders were Zenari, Orc, and two Humans, the organization prioritizes skill and combat readiness over race or past affiliations.
+Soon they became highly popular as additions to the peacekeeping forces of the city, royal guard for noble families, caravan guards or hired muscle for smaller tasks, intimidations and others. Warriors of the Golden Hand would be placed in smaller and bigger units depending on the task, with a general assigned to them, to which they would report.
+
+**

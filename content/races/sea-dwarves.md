@@ -1,0 +1,1 @@
+Dwarves are stocky and powerfully built, with ruddy complexions and thick beards that are often braided in the style of their clan ancestry. They wear robust armor and are seldom seen without an axe or hammer, symbolizing their warrior and forging skills. Fierce and loyal, they hold honor and tradition in high regard, often engaging in feasts and loud storytelling.

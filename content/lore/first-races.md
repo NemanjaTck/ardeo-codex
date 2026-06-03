@@ -1,0 +1,8 @@
+First Zenari settlements arose south of K'uhad river, in the lush expanse of Manaar-Zersh. Quickly they expanded even more north, into the K'uhad jungle, cohabiting with various wild species of beasts and other animals. Their deep connection with nature, reflected itself in the high proficiency with herbalism and medicine, animal care and protection as well as construction and masonry.
+
+In the central parts of the continent, Elves spread quickly, discovering and enjoying the world around them. Their history books contain records from the very first settlements they built in Eurenis. They embraced life that has been given to them, expressing joy through songs and dance, food and drink, living peacefully without conflicts or wars between settlements.
+
+Deep below the surface, in long tunnels hidden far beneath the ground, the ancient race of Raod'gar lived quietly, ensuring the core of Ardeo remained protected at any times. Even today, Raod'gar is a rare sight, though some say that Gnomish city of Daragor was built on top of the Raod'gar tunnels.
+
+In the desert of Luvani, first Summanir settlement was established in an unknown location. The gods had a different plan for the people of Summanir, as they have created them in the vast, resource scarce desert to test their intelligence and resilience.
+Soon, first Summanir elders, found a way to draw on the power of Baramul and extract moisture from the air around them, to create the water which would enable them to survive in these harsh conditions of Luvani. A couple of hundred years later, first city in the world, Sheturan, was founded.

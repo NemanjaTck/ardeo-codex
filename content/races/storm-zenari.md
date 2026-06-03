@@ -1,0 +1,1 @@
+Storm Zenari have light gray skin and eyes that shimmer like a clear sky. They are leaner than their orcish brethren, with bodies adapted to high altitudes and swift movements. Storm Zenari are known for their agile minds and quick wits, often seen as the strategists among Zenari, using the power of wind and storm in their magic and combat.
