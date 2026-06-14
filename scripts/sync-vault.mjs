@@ -32,18 +32,11 @@ const PUBLIC_DIR = path.join(APP_ROOT, "public");
 const SOURCES = [
   { dir: "Gazetteer/Settlements", category: "settlements" },
   { dir: "Gazetteer/Villages", category: "villages" },
-  { dir: "Gazetteer/Nature", category: "nature" },
-  { dir: "Gazetteer/Regions", category: "regions" },
-  { dir: "The World/Regions", category: "regions", recursive: true },
   { dir: "Gazetteer/Factions", category: "factions" },
   { dir: "Gazetteer/Organizations", category: "organizations" },
   { dir: "Races", category: "races" },
-  { dir: "NPCs Public", category: "characters" },
   { dir: "Lore", category: "lore", recursive: true, ordered: true, ages: true },
   { dir: "History", category: "history", recursive: true },
-  { dir: "The World/Alcohol", category: "culture" },
-  { dir: "The World/Weather", category: "culture" },
-  { dir: "Resources", category: "resources" },
   { dir: "Campaigns/Zenari Artifact", category: "chronicles", ordered: true },
 ];
 
@@ -93,13 +86,19 @@ function deriveTitle(baseName, ordered) {
   let title = baseName.replace(/\.md$/i, "");
   let order = null;
   if (ordered) {
-    const m = title.match(/^(\d+(?:\.\d+)?)[.)]?\s+(.*)$/);
+    // Match "2.14 Foo" / "2 Foo" / "2) Foo" and combine major.minor into ONE
+    // sortable number (major*1000 + minor) so 2.2 < 2.10 < 2.14. The old code
+    // used parseFloat, which made 2.10 collapse to 2.1 and sort 2.14 before 2.2.
+    const m = title.match(/^(\d+)(?:\.(\d+))?[.)]?\s+(.*)$/);
     if (m) {
-      order = parseFloat(m[1]);
-      title = m[2];
+      const major = parseInt(m[1], 10);
+      const minor = m[2] ? parseInt(m[2], 10) : 0;
+      order = major * 1000 + minor;
+      title = m[3];
     }
+    // Use the same major*1000 scale so formatOrder() shows "3", not "0.3".
     const ch = title.match(/^Chapter\s+(\d+)/i);
-    if (ch) order = parseInt(ch[1], 10);
+    if (ch) order = parseInt(ch[1], 10) * 1000;
   }
   return { title: title.trim(), order };
 }

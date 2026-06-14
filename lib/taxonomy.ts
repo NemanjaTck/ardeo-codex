@@ -1,21 +1,16 @@
-// Single source of truth for the codex's categories and how they group into
-// the navigation. Keys here MUST match the category keys emitted by
-// scripts/sync-vault.mjs.
+// Single source of truth for the codex's categories and the (now flat) top
+// navigation. Category keys here MUST match the keys emitted by
+// scripts/sync-vault.mjs and the `category` field in content/index.json.
 
 export type CategoryKey =
   | "settlements"
   | "villages"
-  | "nature"
-  | "regions"
   | "factions"
   | "organizations"
   | "races"
-  | "characters"
   | "gods"
   | "lore"
   | "history"
-  | "culture"
-  | "resources"
   | "chronicles";
 
 export type SigilKey =
@@ -39,13 +34,8 @@ export interface CategoryDef {
   singular: string; // for an individual entry's badge
   blurb: string; // shown on category index cards
   sigil: SigilKey;
-}
-
-export interface SectionDef {
-  key: string;
-  label: string;
-  blurb: string;
-  categories: CategoryKey[];
+  /** Lore entries carry an `age` + `order`; the editor exposes those fields. */
+  chronological?: boolean;
 }
 
 export const CATEGORIES: Record<CategoryKey, CategoryDef> = {
@@ -63,82 +53,48 @@ export const CATEGORIES: Record<CategoryKey, CategoryDef> = {
     blurb: "Hamlets and outlying communities beyond the city walls.",
     sigil: "hamlet",
   },
-  nature: {
-    key: "nature",
-    label: "Geography",
-    singular: "Landmark",
-    blurb: "Forests, peaks, rivers, and seas that shape the land.",
-    sigil: "peak",
-  },
-  regions: {
-    key: "regions",
-    label: "Regions",
-    singular: "Region",
-    blurb: "The great provinces and territories of the continent.",
-    sigil: "map",
-  },
   factions: {
     key: "factions",
-    label: "Factions & Kingdoms",
+    label: "Factions",
     singular: "Faction",
-    blurb: "The realms, clans, and powers that vie for dominion.",
+    blurb: "The realms, kingdoms, clans, and powers that vie for dominion.",
     sigil: "banner",
   },
   organizations: {
     key: "organizations",
-    label: "Orders & Organizations",
+    label: "Organizations",
     singular: "Organization",
-    blurb: "Guilds, orders, and secret societies working the shadows.",
+    blurb: "Orders, guilds, and secret societies working the shadows.",
     sigil: "eye",
   },
   races: {
     key: "races",
-    label: "Peoples & Races",
-    singular: "People",
+    label: "Races",
+    singular: "Race",
     blurb: "The kindreds and bloodlines that walk the world.",
     sigil: "folk",
   },
-  characters: {
-    key: "characters",
-    label: "Characters",
-    singular: "Character",
-    blurb: "Notable figures whose deeds echo through the age.",
-    sigil: "portrait",
-  },
   gods: {
     key: "gods",
-    label: "Gods & Religion",
+    label: "Gods",
     singular: "Deity",
     blurb: "The pantheon and the divine powers behind creation.",
     sigil: "sun",
   },
   lore: {
     key: "lore",
-    label: "History & Lore",
+    label: "History",
     singular: "Chronicle",
-    blurb: "The ages of the world, from creation to present peace.",
+    blurb: "The ages of the world, from creation to the present peace.",
     sigil: "scroll",
+    chronological: true,
   },
   history: {
     key: "history",
     label: "Annals",
     singular: "Record",
     blurb: "Timelines and assorted records of ages past.",
-    sigil: "scroll",
-  },
-  culture: {
-    key: "culture",
-    label: "Culture",
-    singular: "Custom",
-    blurb: "Drink, weather, and the everyday texture of the world.",
-    sigil: "goblet",
-  },
-  resources: {
-    key: "resources",
-    label: "Resources",
-    singular: "Resource",
-    blurb: "Metals, materials, and the wealth of the earth.",
-    sigil: "gem",
+    sigil: "book",
   },
   chronicles: {
     key: "chronicles",
@@ -149,61 +105,101 @@ export const CATEGORIES: Record<CategoryKey, CategoryDef> = {
   },
 };
 
-export const SECTIONS: SectionDef[] = [
+/**
+ * The flat top navigation. Each item is a single link — no submenus.
+ * `coversCategories` lists every content category surfaced under that item
+ * (used to decide whether the item has content and, for Settlements, to merge
+ * villages in). `href` is where the item points.
+ */
+export interface NavItem {
+  key: string;
+  label: string;
+  href: string;
+  sigil: SigilKey;
+  blurb: string;
+  coversCategories: CategoryKey[];
+}
+
+export const NAV_ITEMS: NavItem[] = [
   {
-    key: "world",
-    label: "The World",
-    blurb: "Lands, geography, and the texture of the realm.",
-    categories: ["regions", "nature", "culture", "resources"],
+    key: "settlements",
+    label: "Settlements",
+    href: "/codex/settlements/",
+    sigil: "keep",
+    blurb: "Cities, towns, and the villages beyond their walls.",
+    coversCategories: ["settlements", "villages"],
   },
   {
-    key: "places",
-    label: "Places",
-    blurb: "Where the peoples of Ardeo make their homes.",
-    categories: ["settlements", "villages"],
+    key: "factions",
+    label: "Factions",
+    href: "/codex/factions/",
+    sigil: "banner",
+    blurb: "Kingdoms, clans, and the powers that vie for dominion.",
+    coversCategories: ["factions"],
   },
   {
-    key: "powers",
-    label: "Powers",
-    blurb: "The factions and orders that move the world.",
-    categories: ["factions", "organizations"],
+    key: "organizations",
+    label: "Organizations",
+    href: "/codex/organizations/",
+    sigil: "eye",
+    blurb: "Orders, guilds, and secret societies.",
+    coversCategories: ["organizations"],
   },
   {
-    key: "peoples",
-    label: "Peoples",
+    key: "races",
+    label: "Races",
+    href: "/codex/races/",
+    sigil: "folk",
     blurb: "The kindreds that walk beneath the sun and moons.",
-    categories: ["races"],
+    coversCategories: ["races"],
   },
   {
-    key: "figures",
-    label: "Characters",
-    blurb: "The hands that shape history.",
-    categories: ["characters"],
-  },
-  {
-    key: "divine",
+    key: "gods",
     label: "Gods",
+    href: "/codex/gods/",
+    sigil: "sun",
     blurb: "The pantheon and its dominions.",
-    categories: ["gods"],
+    coversCategories: ["gods"],
   },
   {
     key: "history",
     label: "History",
+    href: "/history/",
+    sigil: "scroll",
     blurb: "The ages of the world, set down in order.",
-    categories: ["lore", "history"],
+    coversCategories: ["lore"],
   },
   {
-    key: "tales",
-    label: "Chronicles",
-    blurb: "Recorded adventures from across the realm.",
-    categories: ["chronicles"],
+    key: "annals",
+    label: "Annals",
+    href: "/codex/history/",
+    sigil: "book",
+    blurb: "Timelines and assorted records.",
+    coversCategories: ["history"],
   },
+  {
+    key: "chronicles",
+    label: "Chronicles",
+    href: "/codex/chronicles/",
+    sigil: "book",
+    blurb: "Recorded adventures from across the realm.",
+    coversCategories: ["chronicles"],
+  },
+];
+
+/** Categories a user can create/edit from the backoffice (in menu order). */
+export const EDITABLE_CATEGORIES: CategoryKey[] = [
+  "settlements",
+  "villages",
+  "factions",
+  "organizations",
+  "races",
+  "gods",
+  "lore",
+  "history",
+  "chronicles",
 ];
 
 export function categoryDef(key: string): CategoryDef | undefined {
   return CATEGORIES[key as CategoryKey];
-}
-
-export function sectionForCategory(key: string): SectionDef | undefined {
-  return SECTIONS.find((s) => s.categories.includes(key as CategoryKey));
 }

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav, { type NavSection } from "@/components/Nav";
+import Nav, { type NavItem } from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { sectionsPresent } from "@/lib/content";
-import { CATEGORIES } from "@/lib/taxonomy";
+import { navItemsPresent } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: {
@@ -14,15 +13,11 @@ export const metadata: Metadata = {
     "An encyclopedia of Ardeo: its realms, peoples, factions, gods, and the history that binds them.",
 };
 
-function navData(): NavSection[] {
-  return sectionsPresent().map((s) => ({
-    key: s.key,
-    label: s.label,
-    categories: s.categories.map((c) => ({
-      key: c,
-      label: CATEGORIES[c].label,
-      href: `/codex/${c}/`,
-    })),
+function navData(): NavItem[] {
+  return navItemsPresent().map((i) => ({
+    key: i.key,
+    label: i.label,
+    href: i.href,
   }));
 }
 
@@ -46,7 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col">
-        <Nav sections={navData()} />
+        <Nav items={navData()} />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

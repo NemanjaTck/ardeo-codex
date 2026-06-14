@@ -71,6 +71,38 @@
   .link-gold {
     @apply text-gold transition-colors hover:text-gold-bright;
   }
+
+  /* ---- Backoffice form controls (mobile-first, large touch targets) ---- */
+  .admin-label {
+    @apply mb-1.5 block font-display text-xs uppercase tracking-[0.18em] text-gold-deep;
+  }
+  .admin-input,
+  .admin-textarea,
+  .admin-select {
+    @apply w-full rounded-sm border border-edge bg-ink-700/70 px-4 py-3 text-base
+           text-parchment placeholder:text-parchment-faint
+           focus:border-gold-deep focus:outline-none;
+  }
+  .admin-textarea {
+    @apply font-body leading-relaxed;
+    min-height: 14rem;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-gold-deep
+           bg-gold-deep/20 px-5 py-3 font-display text-sm uppercase tracking-[0.16em]
+           text-gold-bright transition-colors hover:bg-gold-deep/35
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-edge
+           px-5 py-3 font-display text-sm uppercase tracking-[0.16em] text-parchment-soft
+           transition-colors hover:border-gold-deep hover:text-gold;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-blood/70
+           px-5 py-3 font-display text-sm uppercase tracking-[0.16em] text-ember
+           transition-colors hover:bg-blood/20 disabled:opacity-50;
+  }
 }
 
 /* ---- Readable "grimoire" prose ---------------------------------------- */

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { loreByAge, entriesByCategory } from "@/lib/content";
+import EditButton from "@/components/EditButton";
+import { loreByAge, countByCategory } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "History of Ardeo",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function HistoryPage() {
   const ages = loreByAge();
-  const annals = entriesByCategory("history");
+  const hasAnnals = countByCategory("history") > 0;
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-12">
@@ -26,8 +27,11 @@ export default function HistoryPage() {
         <div className="rule-ornament mx-auto mt-5 max-w-xs">✦</div>
         <p className="mx-auto mt-5 max-w-xl text-parchment-muted">
           From the shaping of the world to the peace that holds today — the
-          chronicle of all that has come to pass.
+          chronicle of all that has come to pass, set down in order.
         </p>
+        <div className="mt-6 flex justify-center">
+          <EditButton href="/admin/new/?category=lore" label="New chapter" />
+        </div>
       </header>
 
       <div className="space-y-16">
@@ -49,7 +53,7 @@ export default function HistoryPage() {
                   <span className="absolute -left-[1.65rem] top-2.5 h-2 w-2 rounded-full bg-gold-deep" />
                   <Link
                     href={e.url}
-                    className="panel group block p-4 transition-colors hover:border-gold-deep/70 hover:bg-ink-600/70"
+                    className="panel group block p-4 pr-24 transition-colors hover:border-gold-deep/70 hover:bg-ink-600/70"
                   >
                     <span className="font-display text-lg text-parchment group-hover:text-gold-bright">
                       {e.title}
@@ -60,6 +64,12 @@ export default function HistoryPage() {
                       </span>
                     )}
                   </Link>
+                  <div className="absolute right-3 top-3">
+                    <EditButton
+                      href={`/admin/edit/lore/${e.slug}/`}
+                      label="Edit"
+                    />
+                  </div>
                 </li>
               ))}
             </ol>
@@ -67,26 +77,15 @@ export default function HistoryPage() {
         ))}
       </div>
 
-      {annals.length > 0 && (
-        <section className="mt-16 border-t border-edge/60 pt-8">
-          <h2 className="mb-4 font-display text-xl tracking-wide text-parchment">
-            Annals & Records
-          </h2>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {annals.map((e) => (
-              <li key={e.slug}>
-                <Link
-                  href={e.url}
-                  className="panel block p-4 transition-colors hover:border-gold-deep/70 hover:text-gold"
-                >
-                  <span className="font-display text-parchment hover:text-gold">
-                    {e.title}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
+      {hasAnnals && (
+        <div className="mt-16 border-t border-edge/60 pt-8 text-center">
+          <Link
+            href="/codex/history/"
+            className="text-sm link-gold underline-offset-4 hover:underline"
+          >
+            Annals & assorted records →
+          </Link>
+        </div>
       )}
     </div>
   );

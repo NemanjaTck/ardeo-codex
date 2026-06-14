@@ -1,14 +1,9 @@
 import Link from "next/link";
 import CategorySigil from "@/components/CategorySigil";
-import {
-  allEntries,
-  sectionsPresent,
-  countByCategory,
-} from "@/lib/content";
-import { CATEGORIES } from "@/lib/taxonomy";
+import { allEntries, navItemsPresent } from "@/lib/content";
 
 export default function Home() {
-  const sections = sectionsPresent();
+  const items = navItemsPresent();
   const total = allEntries().length;
   const catCount = new Set(allEntries().map((e) => e.category)).size;
 
@@ -55,34 +50,24 @@ export default function Home() {
         </h2>
         <div className="rule-ornament mx-auto mt-4 mb-12 max-w-sm">✦</div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {sections.map((s) => (
-            <div key={s.key} className="panel p-6">
-              <h3 className="font-display text-lg tracking-wide text-gold">
-                {s.label}
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((item) => (
+            <Link
+              key={item.key}
+              href={item.href}
+              className="panel group flex flex-col p-6 transition-colors hover:border-gold-deep/70 hover:bg-ink-600/60"
+            >
+              <span className="flex items-center justify-between">
+                <span className="text-gold-deep transition-colors group-hover:text-gold">
+                  <CategorySigil sigil={item.sigil} size={28} />
+                </span>
+                <span className="text-xs text-parchment-faint">{item.count}</span>
+              </span>
+              <h3 className="mt-4 font-display text-lg tracking-wide text-gold group-hover:text-gold-bright">
+                {item.label}
               </h3>
-              <p className="mt-1 text-sm text-parchment-muted">{s.blurb}</p>
-              <ul className="mt-4 space-y-1">
-                {s.categories.map((c) => (
-                  <li key={c}>
-                    <Link
-                      href={`/codex/${c}/`}
-                      className="group flex items-center gap-2.5 rounded-sm px-2 py-1.5 transition-colors hover:bg-ink-600/70"
-                    >
-                      <span className="text-gold-deep group-hover:text-gold">
-                        <CategorySigil sigil={CATEGORIES[c].sigil} size={18} />
-                      </span>
-                      <span className="text-parchment-soft group-hover:text-gold">
-                        {CATEGORIES[c].label}
-                      </span>
-                      <span className="ml-auto text-xs text-parchment-faint">
-                        {countByCategory(c)}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <p className="mt-1 text-sm text-parchment-muted">{item.blurb}</p>
+            </Link>
           ))}
         </div>
       </section>

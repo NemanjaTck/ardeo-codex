@@ -4,13 +4,14 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CategorySigil from "@/components/CategorySigil";
 import Markdown from "@/components/Markdown";
+import EditButton from "@/components/EditButton";
 import {
   allEntries,
   getEntry,
   entryBody,
   siblings,
 } from "@/lib/content";
-import { CATEGORIES, sectionForCategory } from "@/lib/taxonomy";
+import { CATEGORIES } from "@/lib/taxonomy";
 
 export const dynamicParams = false;
 
@@ -41,7 +42,6 @@ export default async function EntryPage({
   const entry = getEntry(category, slug);
   if (!entry) notFound();
   const cat = CATEGORIES[entry.category];
-  const section = sectionForCategory(entry.category);
   const body = entryBody(entry.category, entry.slug);
   const { prev, next, siblings: related } = siblings(
     entry.category,
@@ -60,9 +60,15 @@ export default async function EntryPage({
       />
 
       <header className="mb-8">
-        <div className="badge">
-          <CategorySigil sigil={cat.sigil} size={14} />
-          {cat.singular}
+        <div className="flex items-center gap-2">
+          <div className="badge">
+            <CategorySigil sigil={cat.sigil} size={14} />
+            {cat.singular}
+          </div>
+          <EditButton
+            href={`/admin/edit/${entry.category}/${entry.slug}/`}
+            label="Edit"
+          />
         </div>
         <h1 className="mt-3 font-display text-4xl leading-tight text-gold sm:text-5xl">
           {entry.title}
@@ -143,7 +149,6 @@ export default async function EntryPage({
           {/* Details */}
           <dl className="panel mt-4 divide-y divide-edge/50 p-4 text-sm">
             <Detail label="Category" value={cat.label} />
-            {section && <Detail label="Realm of lore" value={section.label} />}
             {entry.age && <Detail label="Age" value={entry.age} />}
             {entry.domain && <Detail label="Domain" value={entry.domain} />}
           </dl>

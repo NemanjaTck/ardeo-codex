@@ -1,33 +1,27 @@
 import Link from "next/link";
-import { sectionsPresent } from "@/lib/content";
-import { CATEGORIES } from "@/lib/taxonomy";
+import CategorySigil from "@/components/CategorySigil";
+import { navItemsPresent } from "@/lib/content";
 
 export default function Footer() {
-  const sections = sectionsPresent();
+  const items = navItemsPresent();
   return (
     <footer className="mt-20 border-t border-edge/70 bg-ink-800/60">
       <div className="mx-auto max-w-6xl px-5 py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {sections.map((s) => (
-            <div key={s.key}>
-              <h3 className="mb-3 font-display text-xs uppercase tracking-[0.2em] text-gold-deep">
-                {s.label}
-              </h3>
-              <ul className="space-y-1.5 text-sm">
-                {s.categories.map((c) => (
-                  <li key={c}>
-                    <Link
-                      href={`/codex/${c}/`}
-                      className="text-parchment-muted transition-colors hover:text-gold"
-                    >
-                      {CATEGORIES[c].label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5 text-sm sm:grid-cols-4">
+          {items.map((item) => (
+            <li key={item.key}>
+              <Link
+                href={item.href}
+                className="group inline-flex items-center gap-2 text-parchment-muted transition-colors hover:text-gold"
+              >
+                <span className="text-gold-deep group-hover:text-gold">
+                  <CategorySigil sigil={item.sigil} size={16} />
+                </span>
+                {item.label}
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
         <div className="mt-10 flex flex-col items-center gap-2 border-t border-edge/50 pt-6 text-center">
           <span className="font-display text-sm tracking-[0.3em] text-gold-deep">
             ✦ ARDEO ✦

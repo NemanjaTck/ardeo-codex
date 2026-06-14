@@ -1,1 +1,0 @@
-Some of the trees in the forest are completely encased in stone, petrified. The reason is unknown.

@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import indexData from "@/content/index.json";
-import { CATEGORIES, SECTIONS, type CategoryKey } from "@/lib/taxonomy";
+import { CATEGORIES, NAV_ITEMS, type CategoryKey } from "@/lib/taxonomy";
 
 export interface Entry {
   slug: string;
@@ -30,6 +30,11 @@ export function entriesByCategory(category: string): Entry[] {
   );
 }
 
+/** Settlements + villages combined (for the merged "Settlements" page). */
+export function settlementsAndVillages(): Entry[] {
+  return [...entriesByCategory("settlements"), ...entriesByCategory("villages")];
+}
+
 export function getEntry(category: string, slug: string): Entry | undefined {
   return ENTRIES.find((e) => e.category === category && e.slug === slug);
 }
@@ -55,13 +60,15 @@ export function countByCategory(category: string): number {
   return ENTRIES.filter((e) => e.category === category).length;
 }
 
-/** Sections that contain at least one non-empty category, with those categories. */
-export function sectionsPresent() {
+/** Nav items that surface at least one non-empty category, with a live count. */
+export function navItemsPresent() {
   const present = new Set(ENTRIES.map((e) => e.category));
-  return SECTIONS.map((s) => ({
-    ...s,
-    categories: s.categories.filter((c) => present.has(c)),
-  })).filter((s) => s.categories.length > 0);
+  return NAV_ITEMS.filter((item) =>
+    item.coversCategories.some((c) => present.has(c))
+  ).map((item) => ({
+    ...item,
+    count: item.coversCategories.reduce((n, c) => n + countByCategory(c), 0),
+  }));
 }
 
 export interface AgeGroup {

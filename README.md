@@ -1,18 +1,35 @@
 # Ardeo Codex
 
-A static encyclopedia of the world of **Ardeo** — its realms, peoples, factions,
+An encyclopedia of the world of **Ardeo** — its realms, peoples, factions,
 gods, and history — built from the Obsidian vault and deployable to Vercel.
 
-Built with **Next.js 16** (App Router, Turbopack, static export) + React 19 +
-Tailwind. No database, no server. Requires **Node.js 20.9+**.
+Built with **Next.js 16** (App Router, Turbopack) + React 19 + Tailwind. No
+database. The public pages are statically generated; a small password-gated
+**backoffice** (`/admin`) lets you add and edit entries from any device —
+phone included. Requires **Node.js 20.9+**.
+
+There are now **two** ways content changes:
+
+1. **Vault sync** (on your laptop) — `npm run sync` pulls the latest notes from
+   the Obsidian vault into `content/`. The canonical bulk import.
+2. **Backoffice** (from anywhere) — log in at `/admin`, edit or create entries.
+   In production each save **commits to this GitHub repo**, which triggers
+   Vercel to rebuild and publish (~1 minute later). Locally (no GitHub token)
+   saves write straight to the `content/` files for instant feedback.
+
+> Heads-up: a later `npm run sync` regenerates `content/` from the vault and
+> will overwrite backoffice edits that aren't also in the vault. When you get
+> back from editing on the go, `git pull` the committed edits before syncing.
 
 ---
 
 ## How it works
 
 ```
-Obsidian vault  ──[ npm run sync ]──►  content/  ──[ npm run build ]──►  out/  ──► Vercel
-   (private)                          (committed)                      (static site)
+Obsidian vault  ──[ npm run sync ]──►  content/  ──[ npm run build ]──►  Vercel
+   (private)              ▲             (committed)                   (Next.js app)
+                          │
+                  backoffice saves  (commit to GitHub → Vercel rebuilds)
 ```
 
 1. **`npm run sync`** reads the chosen folders from your vault, cleans each note
@@ -60,24 +77,42 @@ After editing, run `npm run sync` and commit the updated `content/`.
 
 ---
 
+## The backoffice (editing from your phone)
+
+Visit **`/admin`**, log in, and you get a mobile-first editor: search/filter
+every entry, edit any of them (there are also ✎ pencils on the live pages when
+you're logged in), add new ones, or delete. Lore entries expose **Age** +
+**Order** (e.g. `2.14`) so the History timeline stays in chronological order.
+
+Configure it with environment variables (see **`.env.example`**):
+
+| Var | What it does |
+| --- | --- |
+| `ADMIN_USERNAME`, `ADMIN_PASSWORD` | The login you type at `/admin/login`. |
+| `SESSION_SECRET` | Signs the login cookie (any long random string). |
+| `GITHUB_TOKEN` | A token with **Contents: read/write** on this repo. When set, saves commit to the repo (→ Vercel rebuilds). Leave unset locally to write to files directly. |
+| `GITHUB_REPO`, `GITHUB_BRANCH` | Defaults to `NemanjaTck/ardeo-codex` / `main`. |
+
+Local editing test: `ADMIN_USERNAME=me ADMIN_PASSWORD=pw npm run dev`, then
+open `http://localhost:3000/admin`.
+
+---
+
 ## Deploy to Vercel (via GitHub)
 
-1. Create a new repository on GitHub (e.g. `ardeo-codex`).
-2. From this folder:
+1. Push this repo to GitHub (the remote is already `NemanjaTck/ardeo-codex`):
    ```bash
-   git init
-   git add .
-   git commit -m "Ardeo codex"
-   git branch -M main
-   git remote add origin git@github.com:<you>/ardeo-codex.git
-   git push -u origin main
+   git add . && git commit -m "Backoffice + restructure" && git push
    ```
-3. Go to **vercel.com → Add New → Project → Import** your repo.
-4. Vercel auto-detects Next.js. Leave the defaults (Build `npm run build`,
-   Output handled automatically) and click **Deploy**.
-5. Every `git push` afterwards redeploys automatically.
+2. Go to **vercel.com → Add New → Project → Import** your repo.
+3. Vercel auto-detects Next.js. Leave the build defaults and click **Deploy**.
+4. In **Project → Settings → Environment Variables**, add the variables from the
+   table above (at minimum `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `SESSION_SECRET`,
+   `GITHUB_TOKEN`). Redeploy so they take effect.
+5. Every `git push` — and every backoffice save — redeploys automatically.
 
-To update the site after editing notes: `npm run sync` → `git commit` → `git push`.
+To update the site after editing notes on the laptop: `npm run sync` →
+`git commit` → `git push`.
 
 ---
 
