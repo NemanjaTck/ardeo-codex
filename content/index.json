@@ -951,8 +951,8 @@
     "order": 2012,
     "age": "Age of Elements",
     "ageOrder": 2,
-    "stub": true,
-    "excerpt": "An entry yet to be written."
+    "stub": false,
+    "excerpt": "The Elves were desperately trying to evacuate and save as many people as possible without directly engaging the Zenari armies. However, Ner’thazal and his forces, even with siege weapons, advanced swiftly, covering 25 miles per day. An…"
   },
   {
     "slug": "siege-of-solarion",
