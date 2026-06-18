@@ -1,23 +1,24 @@
-Forces of elements travelled the darkness of the astral plane, searching for a perfect planet to bring forth life, after countless unsuccessful attempts. They finally stumbled upon the planet of Ardeo. Previous attempts left some of the planets completely ravaged, worlds destroyed, some even converging to a demonic hive worlds. This time, the five elements chose a different path. Rather than focusing on crafting life, they directed their elemental forces towards creating celestial beings, whom they named gods, giving each of them fraction of their power. At the beginning, they were only ten, creating the First Pantheon: 
+The forces of the elements travelled the dark of the astral plane, searching for a world fit for life. They had attempted this many times before, and failed. Some of those earlier worlds they left ravaged and broken; a few collapsed into demonic hive worlds. When they came upon Ardeo at last, the five elements chose a different path. Rather than shaping life directly, they turned their power toward creating celestial beings, whom they named gods, and gave each of them a fraction of their power. At first there were only ten, and together they formed the First Pantheon:
 
-- Ishhalor - God of life and creation. 
-- Neiri - Goddess of Death.
-- Ognia - Goddess of Fire.
-- Avelia - Goddess of Water.
-- Zachar - God of Air.
-- Jordeg - God of Earth.
-- Yio - Goddess of Light.
-- Alantir - God of Darkness.
-- Malachai - God of Arcana.
-- Lea - Goddess of War and Peace, matron and ruler of the celestial realm. 
+- Ishhalor, God of Life and Creation
+- Neiri, Goddess of Death
+- Ognia, Goddess of Fire
+- Avelia, Goddess of Water
+- Zachar, God of Air
+- Jordeg, God of Earth
+- Yio, Goddess of Light
+- Alantir, God of Darkness
+- Malachai, God of Arcana
+- Lea, Goddess of War and Peace, matron and ruler of the celestial realm
 
-Inside the vast expanse of the astral plane, every single planet and constellation had their own material planes, being there to create a chance for life to thrive on these cosmic bodies. Some of the planets and constellations, had their own parallel planes, planes that would coexists with material plane and have one or several connections.
-On Ardeo, celestial plane was created alongside the existing planes, forging celestial gates between the material and celestial plane, locking it from the unwanted intrusions. Ardeo was a formed water world, spanning one gigantic land mass with different biomes, perfect for the development of life. Encircling the planet were, not one, not two, but three moons, each one different in size and the light it provided. Senero and Setareh, both shed moonlight, but only as a reflection of the sun rays off their surface. Baramul, on the other side, had its own glow. The faint glow of this massive black giant, wasn't strong enough to match the sun rays, but it was far brighter than the moonlights of Senero and Setareh.
+Within the astral plane, every planet and constellation had a material plane of its own, a place where life might one day take hold. Some had parallel planes as well, worlds that ran alongside the material plane and joined to it through one or more connections.
 
-Inside the Celestial plane, gods had their own realms, where they could create their own vast kingdoms, and focus on duties that have been given to them - to prepare the planet for the birth of life, and when the life comes, to pledge an oath to protect it at any cost.
+On Ardeo, a celestial plane was raised alongside the planes already there. Celestial gates were forged between it and the material plane, then sealed, shutting out anything unwelcome. Ardeo itself was a water world, its surface broken by a single great landmass of many biomes, well suited to life. Three moons circled it, each different in size and in the light it gave. Senero and Setareh both shed moonlight, though only the sun's light reflected from their surfaces. Baramul was different. It was a black giant, and it carried a faint glow of its own, weaker than the sun but far brighter than the light of the other two.
 
-To ensure that the power given to gods, would never harm the life of the planet, gods were forbidden to move into the Material plane. Their essence would fade from the moment they enter, until they are completely gone.
+Within the celestial plane, each god held a realm of their own, free to raise whatever kingdoms they wished and to carry out the duties they had been given: to ready the planet for the coming of life, and once life arrived, to swear an oath to defend it whatever the cost.
 
-Gods can, however, manifest themselves in various forms in the Material plane, enough to enable them to pacify the planet, terraform it and create different life forms.
+No god, however, may set foot in the material plane. To enter it would turn that power against the very life they are meant to protect, and so it is forbidden. The essence of any god who crosses over fades the moment they arrive, until nothing of them remains.
 
-Gods can have relationships and intercourse between them, however, they do not procreate like creatures from the material planes. Gods can use their own essence, to create new gods as their children, or simple mortal servants and soldiers of their realms inside Celestial plane. Those servants are named Eletheri. This process of creation weakens them for a period of time and puts them in vulnerable place during which they can be killed and destroyed.
+They can still reach into it, all the same. A god may take many forms within the material plane, enough to calm the wild young world, shape its land, and bring forth its first living things.
+
+Gods form bonds with one another and take each other as lovers, but they do not breed as mortal creatures do. To make new life of their own, a god spends part of their essence, shaping it into a lesser god, a child of their own, or into the mortal servants and soldiers that fill their realm. These servants are called the Eletheri. The act drains the god who works it, and for a time leaves them weak and exposed, open to being killed, or destroyed outright.
